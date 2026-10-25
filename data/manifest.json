@@ -1,0 +1,134 @@
+{
+  "generated_by": "export_subset.py",
+  "laws": [
+    {
+      "law_id": "labor_law",
+      "chinalaw_id": "flk-labor-law-1994-2018",
+      "title": "中华人民共和国劳动法",
+      "level": "law",
+      "status": "current",
+      "effective_at": "2018-12-29",
+      "repealed_at": null,
+      "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f20f16ee11737",
+      "source_hash": "26a361b2559171a19bc700cd7f9c8f7d0b7025f82e474839c263e541ff38fa55",
+      "source_checked_at": "2026-05-21T09:08:58.823062+00:00",
+      "article_count": 107,
+      "revisions": [
+        {
+          "id": "flk-labor-law-1994-2018@26a361b2559171a1",
+          "law_id": "flk-labor-law-1994-2018",
+          "version_label": "2018-12-29 发布版",
+          "released_at": "2018-12-29",
+          "effective_at": "2018-12-29",
+          "notes": null,
+          "content_hash": "26a361b2559171a19bc700cd7f9c8f7d0b7025f82e474839c263e541ff38fa55"
+        }
+      ]
+    },
+    {
+      "law_id": "labor_contract_law",
+      "chinalaw_id": "2c909fdd678bf17901678bf74d7106b3",
+      "title": "中华人民共和国劳动合同法",
+      "level": "law",
+      "status": "current",
+      "effective_at": "2013-07-01",
+      "repealed_at": null,
+      "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+      "source_hash": "cc22abe848675f05b85db77137e154f03347e112b933517856f3e0fdf850cc04",
+      "source_checked_at": "2026-05-21T09:12:56.775987+00:00",
+      "article_count": 98,
+      "revisions": [
+        {
+          "id": "2c909fdd678bf17901678bf74d7106b3@cc22abe848675f05",
+          "law_id": "2c909fdd678bf17901678bf74d7106b3",
+          "version_label": "2012-12-28 发布 / 2013-07-01 施行",
+          "released_at": "2012-12-28",
+          "effective_at": "2013-07-01",
+          "notes": null,
+          "content_hash": "cc22abe848675f05b85db77137e154f03347e112b933517856f3e0fdf850cc04"
+        }
+      ]
+    },
+    {
+      "law_id": "labor_contract_law_regulation",
+      "chinalaw_id": "gov_xzfgk:284",
+      "title": "中华人民共和国劳动合同法实施条例",
+      "level": "admin_regulation",
+      "status": "unknown",
+      "effective_at": null,
+      "repealed_at": null,
+      "source_url": "https://xzfg.moj.gov.cn/front/law/detail?LawID=284",
+      "source_hash": "6c1abd8c05b0a328d0d86094d0486b144c39c5908f6d9e44d5112d6bbdedd8c0",
+      "source_checked_at": "2026-10-20T14:04:20.950214+00:00",
+      "article_count": 38,
+      "revisions": [
+        {
+          "id": "gov_xzfgk:284@6c1abd8c05b0a328",
+          "law_id": "gov_xzfgk:284",
+          "version_label": "2008-09-18 发布版",
+          "released_at": "2008-09-18",
+          "effective_at": null,
+          "notes": null,
+          "content_hash": "6c1abd8c05b0a328d0d86094d0486b144c39c5908f6d9e44d5112d6bbdedd8c0"
+        }
+      ]
+    },
+    {
+      "law_id": "labor_dispute_arbitration_law",
+      "chinalaw_id": "2c909fdd678bf17901678bf64f28039d",
+      "title": "中华人民共和国劳动争议调解仲裁法",
+      "level": "law",
+      "status": "current",
+      "effective_at": "2008-05-01",
+      "repealed_at": null,
+      "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf64f28039d",
+      "source_hash": "e4265f037eb39107f301fd54ab84c562b671bd3aacacf706aba35685fed66339",
+      "source_checked_at": "2026-05-21T09:12:57.933413+00:00",
+      "article_count": 54,
+      "revisions": [
+        {
+          "id": "2c909fdd678bf17901678bf64f28039d@e4265f037eb39107",
+          "law_id": "2c909fdd678bf17901678bf64f28039d",
+          "version_label": "2007-12-29 发布 / 2008-05-01 施行",
+          "released_at": "2007-12-29",
+          "effective_at": "2008-05-01",
+          "notes": null,
+          "content_hash": "e4265f037eb39107f301fd54ab84c562b671bd3aacacf706aba35685fed66339"
+        }
+      ]
+    },
+    {
+      "law_id": "labor_dispute_interpretation_1",
+      "chinalaw_id": "ff80808177e75f88017800739d621b12",
+      "title": "最高人民法院关于审理劳动争议案件适用法律问题的解释（一）",
+      "level": "judicial_interpretation",
+      "status": "current",
+      "effective_at": "2021-01-01",
+      "repealed_at": null,
+      "source_url": "https://flk.npc.gov.cn/detail?id=ff80808177e75f88017800739d621b12",
+      "source_hash": "ee7a0b8a9db8ff64d69cc469a41e7d6c820f0a71511469988cd8bfb99645de02",
+      "source_checked_at": "2026-05-21T09:13:10.097858+00:00",
+      "article_count": 54,
+      "revisions": [
+        {
+          "id": "ff80808177e75f88017800739d621b12@ee7a0b8a9db8ff64",
+          "law_id": "ff80808177e75f88017800739d621b12",
+          "version_label": "2020-12-29 发布 / 2021-01-01 施行",
+          "released_at": "2020-12-29",
+          "effective_at": "2021-01-01",
+          "notes": null,
+          "content_hash": "ee7a0b8a9db8ff64d69cc469a41e7d6c820f0a71511469988cd8bfb99645de02"
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "records": 351,
+    "laws": 5,
+    "with_effective_from": 351,
+    "missing_effective_from": [],
+    "status_counts": {
+      "effective": 351
+    }
+  }
+}

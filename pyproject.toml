@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legalagent"
+version = "0.1.0"
+description = "Version-aware Chinese labour-law retrieval agent, trained with GRPO on a deterministic citation reward"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "tiantwobird" }]
+keywords = ["legal", "reinforcement-learning", "grpo", "agentic", "retrieval"]
+# 核心（数据 / 工具 / 奖励 / 评测的打分逻辑）只用标准库。
+# 训练与跑模型需要的依赖放 extras，避免 CI 和只想读代码的人被迫装 2 GB 的 torch。
+dependencies = []
+
+[project.optional-dependencies]
+train = [
+    "torch>=2.4",
+    "transformers>=4.45",
+    "trl>=0.12",
+    "peft>=0.13",
+    "datasets>=2.20",
+    "accelerate>=0.34",
+    "safetensors>=0.4",
+]
+
+[tool.setuptools.packages.find]
+include = ["legalagent*"]
+
+[tool.setuptools]
+include-package-data = false

@@ -1,0 +1,22 @@
+# 训练 / 推理依赖 —— 只有这一层需要第三方库。
+#
+# torch 要按自己的 CUDA 版本单独装（直接 pip install -r 本文件不会给你装 torch）：
+#   CUDA 12.8 : pip install torch --index-url https://download.pytorch.org/whl/cu128
+#   CUDA 12.4 : pip install torch --index-url https://download.pytorch.org/whl/cu124
+#   仅 CPU    : pip install torch
+#
+# 然后再装其余依赖：
+#   pip install -r requirements.txt
+#
+# 下面这组是作者实测通过的组合（2026-10，Python 3.13 / RTX 5060 Ti 8 GB）。
+# 只想读代码、跑单测的话不用装这些：核心层（数据 / 工具 / 奖励 / 评测打分）
+# 零第三方依赖，`pip install -e .` 就够了。
+
+transformers==5.20.2
+tokenizers==0.23.2
+safetensors==0.8.0
+accelerate==1.15.0
+trl==1.16.0
+peft==0.21.2
+datasets==5.1.0
+numpy>=1.26

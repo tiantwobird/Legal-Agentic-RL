@@ -1,0 +1,93 @@
+{
+  "total": 600,
+  "counts_by_split": {
+    "train": 300,
+    "dev": 100,
+    "test": 150,
+    "badcase": 50
+  },
+  "counts_by_type": {
+    "direct_retrieval": 110,
+    "fact_application": 220,
+    "multi_article": 165,
+    "insufficient_information": 55
+  },
+  "counts_by_type_note": "只统计 train/dev/test 共 550 条；badcase 50 条单独按 failure_mode 统计",
+  "counts_by_badcase_mode": {
+    "no_tool": 7,
+    "no_recall": 7,
+    "hallucinated": 10,
+    "wrong_article": 10,
+    "missing_points": 8,
+    "insufficient_handling": 8
+  },
+  "counts_by_split_and_type": {
+    "badcase/direct_retrieval": 17,
+    "badcase/fact_application": 17,
+    "badcase/insufficient_information": 8,
+    "badcase/multi_article": 8,
+    "dev/direct_retrieval": 20,
+    "dev/fact_application": 40,
+    "dev/insufficient_information": 10,
+    "dev/multi_article": 30,
+    "test/direct_retrieval": 30,
+    "test/fact_application": 60,
+    "test/insufficient_information": 15,
+    "test/multi_article": 45,
+    "train/direct_retrieval": 60,
+    "train/fact_application": 120,
+    "train/insufficient_information": 30,
+    "train/multi_article": 90
+  },
+  "difficulty": {
+    "easy": 138,
+    "medium": 267,
+    "hard": 195
+  },
+  "law_coverage": {
+    "labor_law": {
+      "articles_in_corpus": 107,
+      "articles_used": 103,
+      "tasks_with_gold_from_law": 168
+    },
+    "labor_contract_law": {
+      "articles_in_corpus": 98,
+      "articles_used": 98,
+      "tasks_with_gold_from_law": 249
+    },
+    "labor_contract_law_regulation": {
+      "articles_in_corpus": 38,
+      "articles_used": 38,
+      "tasks_with_gold_from_law": 85
+    },
+    "labor_dispute_arbitration_law": {
+      "articles_in_corpus": 54,
+      "articles_used": 54,
+      "tasks_with_gold_from_law": 93
+    },
+    "labor_dispute_interpretation_1": {
+      "articles_in_corpus": 54,
+      "articles_used": 54,
+      "tasks_with_gold_from_law": 103
+    }
+  },
+  "article_ids_used": 347,
+  "new_article_ids": 217,
+  "new_article_ids_incl_badcase": 230,
+  "max_tasks_per_article": 6,
+  "max_jaccard_all": 0.7234,
+  "max_jaccard_test_vs_train": 0.6875,
+  "review_status": "assistant-authored + programmatic verification; independent legal expert review PENDING",
+  "fixed_applicable_date": "2024-06-01",
+  "composition": {
+    "initial_rows": 150,
+    "added_rows": 450
+  },
+  "known_limitations": [
+    "only 5 laws / 351 articles; no historical versions",
+    "single applicable_date 2024-06-01",
+    "not reviewed by an independent licensed lawyer",
+    "35 test prompts are unstructured (from the initial task set)",
+    "the 150 initial rows lack badcase_category/failure_mode keys"
+  ]
+}

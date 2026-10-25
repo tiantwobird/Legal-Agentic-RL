@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# 虚拟环境
+.venv/
+.venv-ml/
+venv/
+env/
+
+# 上游第三方仓库：chinalaw-cli 有自己的 .git，不随本仓库分发。
+# 需要重新导出语料时按 README 的说明单独 clone：
+#   git clone https://github.com/nh59yytyd5-dev/chinalaw-cli.git chinalaw-cli
+chinalaw-cli/
+
+# 权重与训练产物：本仓库不发布任何模型权重
+*.safetensors
+*.pt
+*.pth
+*.bin
+runs/*
+!runs/README.md
+
+# 评测与分析输出：仓库只留目录说明，结果由使用者自己生成
+results/*
+!results/README.md
+
+# 可再生成的数据
+data/*.sqlite3
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/tasks/curriculum_*.jsonl
+
+# 本地缓存 / 临时 / 备份
+.tmp/
+.tmp-*/
+.backup/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 系统
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 压缩包
+*.zip

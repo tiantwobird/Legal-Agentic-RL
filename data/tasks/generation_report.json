@@ -1,0 +1,78 @@
+{
+  "dataset": "tasks",
+  "total_rows": 600,
+  "applicable_date": "2024-06-01",
+  "composition": {
+    "initial_rows": 150,
+    "added_rows": 450
+  },
+  "source_archive": {
+    "name": "tasks_source.zip",
+    "sha256": "cb6b7ac86e84e89f40f6df6415636bd11dcf3a0e15a2a4db2b20c8b19fc784c7"
+  },
+  "corpus": {
+    "name": "data/labor_subset.jsonl",
+    "rows": 351,
+    "sha256": "4c8903f144c60cf65b0a8ed49f48e9a24cbf805c27747a56b1f99a3fb177c22c"
+  },
+  "counts_by_split": {
+    "train": 300,
+    "dev": 100,
+    "test": 150,
+    "badcase": 50
+  },
+  "counts_by_type": {
+    "all": {
+      "direct_retrieval": 127,
+      "fact_application": 237,
+      "multi_article": 173,
+      "insufficient_information": 63
+    },
+    "train_dev_test": {
+      "direct_retrieval": 110,
+      "fact_application": 220,
+      "multi_article": 165,
+      "insufficient_information": 55
+    }
+  },
+  "badcase_modes": {
+    "no_tool": 7,
+    "no_recall": 7,
+    "hallucinated": 10,
+    "wrong_article": 10,
+    "missing_points": 8,
+    "insufficient_handling": 8
+  },
+  "coverage": {
+    "article_ids_used": 347,
+    "new_article_ids": 230,
+    "max_tasks_per_article": 6,
+    "banned_used": 0
+  },
+  "similarity": {
+    "method": "character 5-gram Jaccard on full prompt",
+    "max_all": 0.7234,
+    "max_all_pair": [
+      "LABOR_211",
+      "LABOR_390"
+    ],
+    "max_test_vs_train": 0.6875
+  },
+  "validation": {
+    "counts_ok": true,
+    "task_ids_unique": 600,
+    "prompts_unique": 600,
+    "evidence_rows": 824,
+    "evidence_all_valid": true,
+    "prompts_only_keys_ok": true,
+    "manifest_hashes_ok": true,
+    "test_and_badcase_frozen": true,
+    "encoding": "UTF-8 no BOM, LF"
+  },
+  "known_issues": [
+    "74 tasks have at least one answer point with <0.2 character-bigram coverage against the gold article text",
+    "24/50 badcase probes (no_tool, no_recall, hallucinated) are ordinary direct questions and may not trigger the intended failure",
+    "35 test prompts are unstructured (initial task set)",
+    "no independent lawyer review"
+  ]
+}

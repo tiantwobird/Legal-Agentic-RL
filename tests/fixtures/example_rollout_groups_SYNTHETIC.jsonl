@@ -1,0 +1,5 @@
+{"task_id": "LABOR_011", "policy_version": "synthetic_demo_NOT_MODEL_EVAL", "rewards": [0.0, 0.4, 0.6, 1.0], "successes": [0, 0, 1, 1], "error_types": [["citation_error"], ["reasoning_error"], [], []]}
+{"task_id": "LABOR_012", "policy_version": "synthetic_demo_NOT_MODEL_EVAL", "rewards": [0.0, 0.0, 0.0, 0.0], "successes": [0, 0, 0, 0], "error_types": [["retrieval_error"], ["retrieval_error"], ["retrieval_error"], ["retrieval_error"]]}
+{"task_id": "LABOR_007", "policy_version": "synthetic_demo_NOT_MODEL_EVAL", "rewards": [1.0, 1.0, 1.0, 1.0], "successes": [1, 1, 1, 1], "error_types": [[], [], [], []]}
+{"task_id": "LABOR_015", "policy_version": "synthetic_demo_NOT_MODEL_EVAL", "rewards": [0.1, 0.3, 0.8, 0.2], "successes": [0, 0, 1, 0], "error_types": [["tool_planning_error"], ["citation_error"], [], ["citation_error"]]}
+{"task_id": "LABOR_003", "policy_version": "synthetic_demo_NOT_MODEL_EVAL", "rewards": [0.1, 0.5, 0.5, 0.1], "successes": [0, 1, 1, 0], "error_types": [["retrieval_error"], [], [], ["reasoning_error"]]}
